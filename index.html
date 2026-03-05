@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 350px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .btn { background-color: #28a745; color: white; border: none; cursor: pointer; font-size: 16px; }
+        .btn:hover { background-color: #218838; }
+        a { text-decoration: none; color: #007bff; display: block; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register Student</h2>
+        <form action="insert.php" method="POST">
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
+            <input type="text" name="roll" placeholder="Roll No / ID" required>
+            <input type="password" name="pass" placeholder="Password" required>
+            <input type="text" name="contact" placeholder="Contact Number" required>
+            <input type="submit" value="Register" class="btn">
+        </form>
+        <a href="view.php">View All Records</a>
+    </div>
+</body>
+</html>
